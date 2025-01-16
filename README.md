@@ -1,3 +1,5 @@
+# ![Integrity Games Logo](https://i.ibb.co/J2THTk6/1.png)
+
 # Integrity Games
 
 ## 🎮 GAME SITE IN DEVELOPMENT 🎮
