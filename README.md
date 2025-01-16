@@ -15,4 +15,4 @@ Follow the progress as we build a next-level gaming platform!
 ## 📢 Stay Connected
 
 - **Website**: [Coming Soon]
-- **Socials**: [Link Placeholder]
+- **Socials**: [Coming Soon]
