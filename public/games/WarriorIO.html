@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WarriorIO</title>
+        <link rel="stylesheet" href="game.css">
+        <link rel="icon" href="https://camo.githubusercontent.com/7ddd6b87b7174874d1b6c3e6de88b6abf5e32339687795f3d78d064937ad799a/68747470733a2f2f692e6962622e636f2f4a325448546b362f312e706e67" type="image/png">
+      </head>
+      
+<body>
+  <header class="navbar">
+    <h1>Integrity Games</h1>
+  </header>
+
+  <section class="game-container">
+    <div class="game-frame" id="game-frame"></div>
+    <button id="fullscreen-btn" class="fullscreen-btn">&#x26F6;</button>
+  </section>
+
+  <script src="script.js"></script>
+  <script>
+    window.onload = function() {
+      var iframe = document.createElement('iframe');
+      iframe.src = 'https://lib1-28595.web.app/WarriorSurvivalIO/index.html';
+      iframe.frameBorder = '0';
+      iframe.className = 'game-iframe';
+      document.getElementById('game-frame').appendChild(iframe);
+    };
+
+    document.getElementById('fullscreen-btn').addEventListener('click', function() {
+      var iframe = document.querySelector('.game-iframe');
+      if (iframe.requestFullscreen) {
+        iframe.requestFullscreen();
+      } else if (iframe.mozRequestFullScreen) {
+        iframe.mozRequestFullScreen();
+      } else if (iframe.webkitRequestFullscreen) {
+        iframe.webkitRequestFullscreen();
+      } else if (iframe.msRequestFullscreen) {
+        iframe.msRequestFullscreen();
+      }
+    });
+  </script>
+</body>
+</html>
